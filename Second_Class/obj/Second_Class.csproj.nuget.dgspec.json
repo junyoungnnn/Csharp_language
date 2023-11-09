@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj": {}
+    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Second_Class\\Second_Class.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj": {
+    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Second_Class\\Second_Class.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj",
-        "projectName": "Program",
-        "projectPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj",
+        "projectUniqueName": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Second_Class\\Second_Class.csproj",
+        "projectName": "Second_Class",
+        "projectPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Second_Class\\Second_Class.csproj",
         "packagesPath": "C:\\Users\\IDBLAB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\obj\\",
+        "outputPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Second_Class\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IDBLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
