@@ -34,12 +34,13 @@
         }
 
         // params : 가변 길이 매개변수
-        public void Normalize(params int[] list)
+        public void Normalize(params object[] list)
         {
+            object sum;
+
             for (int i = 0; i < list.Length; i++)
             {
-                int sum = 0;
-                sum += (int)list[i];
+                sum = list[i];
                 Console.Write(sum + " ");
             }
             Console.WriteLine("");
