@@ -1,6 +1,5 @@
-﻿namespace Program
+﻿namespace Class_3rd
 {
-
     #region 프로퍼티
     public class Transform
     {
@@ -9,15 +8,16 @@
         private int z;
 
         public int X
-        {   
-            set 
-            {   if(value >= 100)
+        {
+            set
+            {
+                if (value >= 100)
                 {
                     Console.WriteLine("I received an unexpected value");
                     return;
                 }
 
-                x = value; 
+                x = value;
             }
             get { return x; } // 읽기 전용, X를 반환하면 자기 자신을 여러번 호출하기 때문에
                               // 무한 반복이 된다.
@@ -67,7 +67,7 @@
         }
 
         public void Destory(float timer)
-        { 
+        {
             Console.WriteLine("Destory GameObject " + "Destory Time: " + timer);
         }
 
@@ -78,7 +78,7 @@
         }
 
         public void SetActive(bool active = true)
-        { 
+        {
             Console.WriteLine("GameObject state : " + active);
         }
 
@@ -140,7 +140,6 @@
             gameObject.SetActive(false);
             */
             #endregion
-
         }
     }
 }
