@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj": {}
+    "C:\\Users\\노준영\\Desktop\\cSharp_language\\Program\\Program.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj": {
+    "C:\\Users\\노준영\\Desktop\\cSharp_language\\Program\\Program.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj",
+        "projectUniqueName": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Program\\Program.csproj",
         "projectName": "Program",
-        "projectPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\Program.csproj",
-        "packagesPath": "C:\\Users\\IDBLAB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Program\\obj\\",
+        "projectPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Program\\Program.csproj",
+        "packagesPath": "C:\\Users\\노준영\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Program\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IDBLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\노준영\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
