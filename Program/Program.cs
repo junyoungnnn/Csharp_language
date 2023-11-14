@@ -1,107 +1,71 @@
-﻿namespace Program
+﻿using System.Diagnostics;
+
+namespace Program
 {
-    public interface IItem
-    {
-        void Use();
-    }
+    public delegate void Calculator(int x, int y);
 
-    public interface IWaitTime
-    {
-        void wait(float timer);
-    }
-
-    public class Player
-    {
-        public void OnTrigegerEnter(IItem item)
-        {
-            item.Use();
-        }
-        //public void OnTrigegerEnter(IWaitTime timer)
-        //{
-        //    timer.wait(50.0f);
-        //}
-
-
-    }
-
-    public class GameObject
-    {
-        private int guID;
-        public int GUID {
-            set { guID = value; }
-            get { return guID; } 
-        }
-
-        public GameObject Clone()
-        {
-            // 1.class를 생성합니다.
-            GameObject cloneObject = new GameObject();
-
-            // 2. class 안에 있는 데이터를 넣어줍니다.
-            cloneObject.guID = guID;
-
-            // 3. class를 반환합니다.
-            return cloneObject;
-        }
-    }
-  
     internal class Program
     {
+        #region 델리게이트
+        static void Add(int x, int y)
+        {
+            Console.WriteLine("x + y = " + (x + y));
+        }
+
+        static void Substract(int x, int y)
+        {
+            Console.WriteLine("x - y = " + (x - y));
+        }
+
+        static void Multiply(int x, int y)
+        {
+            Console.WriteLine("x * y = " + (x * y));
+        }
+
+        static void Divide(int x, int y)
+        {
+            Console.WriteLine("x / y = " + (x / y));
+        }
+
+        #endregion
+        
         static void Main(string[] args)
         {
-            #region 얕은 복사
-            /*
-            GameObject gameObject1 = new GameObject();
+            #region 델리게이트
 
-            GameObject gameObject2 = gameObject1;
+            // 함수포인터: 힘수의 주소를 저장하는 포인터
 
-            gameObject2.GUID = 99;
+            //Calculator calculator;
 
-            Console.WriteLine("gameObject1의 guid: " +  gameObject1.GUID);
-            Console.WriteLine("gameObject2의 guid: " +  gameObject2.GUID);
-            */
-            #endregion
+            //calculator = Substract;
+            //calculator(10, 20);
 
-            #region 깊은 복사
-
-            //GameObject clone1 = new GameObject();
-
-            //GameObject clone2 = clone1.Clone();
-
-            //clone1.GUID = 456;
-            //clone2.GUID = 111;
-
-            //Console.WriteLine("clone1의 guid: " + clone1.GUID);
-            //Console.WriteLine("clone2의 guid: " + clone2.GUID);
+            // ex) 아이템을 먹을때마다 함수를 추가하고
+            // 시간이 지나거나.. 등등으로 함수를 해제한다.
 
             #endregion
 
-            // C#은 다중상속을 지원하지 않습니다.
-            // 인터페이스는 다중상속을 지원합니다.
-            // public interface를 만들어서 상속시키면 된다.
-            // interface 뒤에 'I'를 꼭 붙여주어야한다.
-            // interface 안에 있는 함수는 상속한 클래스에서 재정의를 해주어야한다.
+            #region 델리게이트 체인
 
-            #region 인터페이스
-            Player player = new Player();
-            
-            // 인터페이스 참조 변수를 선언할 수 있지만,
-            // 인스턴스를 생성할 수 없습니다.
-            // IItem item = new IItem();
+            //calculator = Add;
+            //calculator += Substract;
+            //calculator += Multiply;
+            //calculator += Divide;
 
-            player.OnTrigegerEnter(new Magnet());
-            player.OnTrigegerEnter(new Missile());
-            player.OnTrigegerEnter(new Shield());
+            //calculator -= Divide;
+
+            //calculator(5, 5);
+            #endregion
+
+            // readonly 런타임
+            // const 컴파일 상수
+
+            #region base 키워드
+
+            Wizard wizard = new Wizard();
 
             #endregion
 
-            #region 추상클래스
-
-            Juggling juggling = new Juggling();
-            juggling.Information();
-            juggling.Skill();
-
-            #endregion
         }
     }
 }
