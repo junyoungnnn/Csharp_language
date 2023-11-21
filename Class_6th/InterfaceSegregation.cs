@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Class_6th
 {
     #region ISP 5대 원칙
     public interface IMoveable

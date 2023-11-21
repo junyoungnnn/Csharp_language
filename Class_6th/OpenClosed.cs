@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Class_6th
 {
 
     #region 개방 폐쇄 원칙

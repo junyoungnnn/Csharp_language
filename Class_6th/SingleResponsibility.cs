@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Class_6th
 {
 
     #region 단일 책임 원칙

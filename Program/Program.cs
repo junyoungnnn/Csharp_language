@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections;
+using System.Diagnostics;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Program
@@ -8,65 +9,30 @@ namespace Program
     {
         static void Main(string[] args)
         {
+            #region 콜렉션
+            // Collection
+            // ArrayList : 모든 타입을 다 받을 수 있습니다.
+            // List
+            // LinkedList
+            // Stack
+            // Queue
+            // Dictionary - HashTable(Key - Value)
 
-            #region SRP 5대 원칙
-            //Monster spider = new Monster("독거미", 10, 100);
+            // ArrayList
 
-            //spider.Patrol();
+            ArrayList arrayList = new ArrayList();
 
-            //Information information = new Information();
+            arrayList.Add(10);
+            arrayList.Add("String");
+            arrayList.Add(57.5f);
+            arrayList.Add('A');
 
-            //information.MonsterInfo(spider);
-
-            #endregion
-
-            #region OCP 5대원칙
-            //Marine marine = new Marine();
-            //Firebet firebet = new Firebet();
-            //Ghost ghost = new Ghost();
-
-            //UnitManager unitManager = new UnitManager();
-            //unitManager.Commend(marine);
-            //unitManager.Commend(firebet);
-            //unitManager.Commend(ghost);
-
-            #endregion
-
-            #region ISP 5대 원칙
-
-            //Wraith wraith = new Wraith();  
-
-            //wraith.Attack();
-            //wraith.Move();
-            //wraith.Skill();
-
-            //BattleCruiser battleCruiser = new BattleCruiser();
-
-            //battleCruiser.Attack();
-            //battleCruiser.Move();
-            //battleCruiser.Skill();
-
-            //Valykrie valykrie = new Valykrie();
-
-            //valykrie.Attack();
-            //valykrie.Move();
-
-            //Dropship dropship = new Dropship();
-
-            //dropship.Move();
-            //dropship.Skill();
-
-            #endregion
+            foreach(object element in  arrayList)
+            {
+                Console.WriteLine(element);
+            }
 
 
-            #region DIP 5대 원칙
-            Charactor charactor = new Charactor(100, new Knife());
-            charactor.WeaponInfo();
-            charactor.ChangeWeapon(new Axe());
-            charactor.WeaponInfo();
-            charactor.ChangeWeapon(new Rifle());
-            charactor.WeaponInfo();
-            
             #endregion
 
         }
