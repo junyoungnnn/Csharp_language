@@ -4,7 +4,49 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Program
 {
-    
+    public class Rifle : IEnumerator
+    {
+        private int[] bullet;
+        private int index;
+
+        public Rifle()
+        {
+            bullet = new int[5];
+            index = -1;
+        }
+
+        // 읽기 전용 프로퍼티로 현재 위치의 데이터를 object 타입으로 반환합니다.
+        public object Current
+        {
+            get {return bullet[index]; }
+        }
+
+        // MoveNext() : 다음 위치로 이동하는데 다음 위치에 데이터가 있다면 true,
+        //              없다면 false를 반환하는 함수입니다.
+        public bool MoveNext()
+        {
+            index++;
+
+            if( index < bullet.Length ) 
+            {
+                return true;
+            }
+            else
+            {
+                Reset();
+                return false;
+            }
+        }
+
+        // Reset() : 인덱스롤 초기 상태로 이동시킵니다.
+        //           컬렉션의 인덱스를 -1로 설정합니다.
+        public void Reset()
+        {
+            index = -1;
+        }
+    }
+
+
     internal class Program
     {
         
@@ -45,7 +87,26 @@ namespace Program
 
             #region 열거자
 
+            Rifle rifle = new Rifle();
+            
+            while(rifle.MoveNext())
+            {
+                Console.WriteLine(rifle.Current);
+            }
+
             #endregion
+
+
+            int first = 4;
+
+            int d = 3;
+
+            int n = 5;
+
+            for(int i = 0; i < n; i++)
+            {
+                Console.WriteLine(first += d);
+            }
         }
     }
 }

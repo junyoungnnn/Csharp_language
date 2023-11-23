@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj": {}
+    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj": {
+    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj",
+        "projectUniqueName": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj",
         "projectName": "Class_3rd",
-        "projectPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj",
-        "packagesPath": "C:\\Users\\노준영\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_3rd\\obj\\",
+        "projectPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_3rd\\Class_3rd.csproj",
+        "packagesPath": "C:\\Users\\IDBLAB\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_3rd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\노준영\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\IDBLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
