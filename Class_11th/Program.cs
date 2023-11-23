@@ -39,9 +39,9 @@
 
             // 4. [pivot]의 값이 찾는 값보다 작다면 pivot ~ right 사이를 검색합니다.
 
-            int[] array = { 1, 2, 3, 4, 5, 6 };
+            //int[] array = { 1, 2, 3, 4, 5, 6 };
 
-            BinarySearch(10, array, 0, 6);
+            //BinarySearch(10, array, 0, 6);
 
             #endregion
         }

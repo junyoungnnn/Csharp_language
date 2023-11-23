@@ -4,109 +4,53 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Program
 {
-    public class Rifle : IEnumerator
-    {
-        private int[] bullet;
-        private int index;
-
-        public Rifle()
-        {
-            bullet = new int[5];
-            index = -1;
-        }
-
-        // 읽기 전용 프로퍼티로 현재 위치의 데이터를 object 타입으로 반환합니다.
-        public object Current
-        {
-            get {return bullet[index]; }
-        }
-
-        // MoveNext() : 다음 위치로 이동하는데 다음 위치에 데이터가 있다면 true,
-        //              없다면 false를 반환하는 함수입니다.
-        public bool MoveNext()
-        {
-            index++;
-
-            if( index < bullet.Length ) 
-            {
-                return true;
-            }
-            else
-            {
-                Reset();
-                return false;
-            }
-        }
-
-        // Reset() : 인덱스롤 초기 상태로 이동시킵니다.
-        //           컬렉션의 인덱스를 -1로 설정합니다.
-        public void Reset()
-        {
-            index = -1;
-        }
-    }
-
 
     internal class Program
     {
-        
-        static void Main(string[] args)
+        static void Swap(ref int x, ref int y)
         {
-            #region 예외 처리
-            /*
-            try
+            int temp = x;
+            x = y;
+            y = temp;
+        }
+        public static void QuickSort(int[] arr, int left, int right)
+        {
+            // left가 right보다 크거나 같아졌을 때 종료
+            if (left >= right)
             {
-                int data = 0;
+                return;
+            }
 
-                Console.WriteLine(100 / data);
-            }
-            catch ( DivideByZeroException error)
-            {
-                Console.WriteLine(error.Message);
-            }
+            int pivot = arr[left-1];
 
-            try
+            while(pivot > left) 
             {
-                int[] array = new int[3];
+                left++;
+            }
+            while(pivot < right) 
+            {
+                right--;
+            }
+            Swap(ref arr[left], ref arr[right]);
+         
 
-                array[3] = 333;  // catch 쪽으로 jump
+    static void Main(string[] args)
+        {
+            #region 퀵 정렬
+            // 기준점을 획득한 다음 해당 기준점을 기준으로
+            // 배열을 나누고 한 쪽에는 기준점보다 작은 항목들이
+            // 위치하고 다른 쪽에는 기준점 보다 큰 항목들이 위치합니다.
 
-                Console.WriteLine("프로그램 시작"); // 수행 안됨
-            }
-            catch(Exception error)
-            {
-                Console.WriteLine(error.Message);
-            }
-            finally
-            {
-                Console.WriteLine("프로그램 종료");
-            }
-            */
+            // 나뉘어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여
+            // 모든 배열이 기본 배열이 될 때 까지 반복하면서 정렬하는 알고리즘입니다.
+
+            // 시간 복잡도 : O(log n)
+
+            int[] arr = { 5, 3, 8, 4, 9, 1, 6, 2, 7 };
+
+            QuickSort(arr,1, arr.Length - 1);
 
             #endregion
-
-            #region 열거자
-
-            Rifle rifle = new Rifle();
-            
-            while(rifle.MoveNext())
-            {
-                Console.WriteLine(rifle.Current);
-            }
-
-            #endregion
-
-
-            int first = 4;
-
-            int d = 3;
-
-            int n = 5;
-
-            for(int i = 0; i < n; i++)
-            {
-                Console.WriteLine(first += d);
-            }
         }
     }
 }
