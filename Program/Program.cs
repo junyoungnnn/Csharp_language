@@ -1,60 +1,49 @@
-﻿namespace Program
+﻿using System.Linq.Expressions;
+
+namespace Program
 {
     internal class Program
     {
-        static void Swap(ref int x, ref int y)
+        public static void Merge(int []arr, int start, int end)
         {
-            int temp = x;
-            x = y;
-            y = temp;
-        }
-        public static void QuickSort(int[] arr, int left, int right)
-        {
-            // left가 right보다 크거나 같아졌을 때 종료
-            if (left >= right)
+            int mid = (start + end) / 2;
+            
+            if(start == end) 
             {
                 return;
             }
 
-            int pivot = arr[left];
-            left++;
+            Merge(arr, start, mid);
 
-            while (left < right)
-            {
-                if (pivot > arr[left])
-                {
-                    left++;
-                }
+            Merge(arr, mid + 1, end);
 
-                if (pivot < arr[right])
-                {
-                    right--; 
-                }
         }
 
-        Swap(ref arr[left], ref arr[right]);
-            QuickSort(arr, left, pivot - 1);
-            QuickSort(arr, pivot + 1, right);
+        public static void Conquer(int[]arr, int start, int end)
+        {
+            int rightSize = end - (start - end) / 2;
+            int[] newArr = new int[rightSize];
 
 
-            static void Main(string[] args)
-            {
-                #region 퀵 정렬
-                // 기준점을 획득한 다음 해당 기준점을 기준으로
-                // 배열을 나누고 한 쪽에는 기준점보다 작은 항목들이
-                // 위치하고 다른 쪽에는 기준점 보다 큰 항목들이 위치합니다.
+        }
 
-                // 나뉘어진 하위 배열에 대해 재귀적으로 퀵 정렬을 호출하여
-                // 모든 배열이 기본 배열이 될 때 까지 반복하면서 정렬하는 알고리즘입니다.
+        static void Main(string[] args)
+        {
+            #region 병합 정렬
+            // 하나의 리스트를 두개의 균등한 크기로 분할하고
+            // 분할된 부분 리스트를 정렬한 다음, 두개의 정렬된 부분
+            // 리스트를 합하여 전체가 정렬된 리스트가 되게 하는 방법입니다.
 
-                // 시간 복잡도 : O(log n)
+            // 분할 : 입력 배열의 같은 크기의 2개의 부분 배열로 분할합니다.
+            // 정복 : 부분 배열을 정렬하며, 부분 배열의 크기가 충분히 작지 않으면
+            //        순환 호출을 이용하여 다시 분할 정복을 실행합니다.
+            // 결합 : 정렬된 부분 배열들을 하나의 배열에 병합합니다.
 
-                int[] arr = { 5, 3, 8, 4, 9, 1, 6, 2, 7 };
+            int[] arr = new int[9] { 5, 3, 8, 4, 9, 1, 6, 2, 7 };
 
-                QuickSort(arr, 0, arr.Length - 1);
+            Merge(arr, 0, arr.Length - 1);
 
-                #endregion
-            }
+            #endregion
         }
     }
 }

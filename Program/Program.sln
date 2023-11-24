@@ -5,9 +5,9 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Program", "Program.csproj", "{264632C8-AD0C-471F-8E72-7A76775FDDE3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "First_Class", "..\First_Class\First_Class.csproj", "{4BEB461E-C9F7-4D0E-BDDB-13F1E29E924D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class_1st", "..\First_Class\Class_1st.csproj", "{4BEB461E-C9F7-4D0E-BDDB-13F1E29E924D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Second_Class", "..\Second_Class\Second_Class.csproj", "{CE004B94-087F-4541-860D-739ADA0F91FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class_2nd", "..\Second_Class\Class_2nd.csproj", "{CE004B94-087F-4541-860D-739ADA0F91FD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class_3rd", "..\Class_3rd\Class_3rd.csproj", "{153B9131-042C-487E-9F4A-C6016F19B403}"
 EndProject
@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class_9th", "..\Class_9th\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class_11th", "..\Class_11th\Class_11th.csproj", "{6BBEF65D-ABF0-4609-B1F3-025B7C6992EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class_12th", "..\Class_12th\Class_12th.csproj", "{B383D76A-0B9C-4DCE-8113-0EDB9F0A2921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class_12th", "..\Class_12th\Class_12th.csproj", "{B383D76A-0B9C-4DCE-8113-0EDB9F0A2921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
