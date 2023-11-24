@@ -16,17 +16,25 @@
                 return;
             }
 
-            int pivot = arr[left - 1];
+            int pivot = arr[left];
+            left++;
 
-            while (pivot > left)
+            while (left < right)
             {
-                left++;
-            }
-            while (pivot < right)
-            {
-                right--;
-            }
-            Swap(ref arr[left], ref arr[right]);
+                if (pivot > arr[left])
+                {
+                    left++;
+                }
+
+                if (pivot < arr[right])
+                {
+                    right--; 
+                }
+        }
+
+        Swap(ref arr[left], ref arr[right]);
+            QuickSort(arr, left, pivot - 1);
+            QuickSort(arr, pivot + 1, right);
 
 
             static void Main(string[] args)
@@ -43,7 +51,7 @@
 
                 int[] arr = { 5, 3, 8, 4, 9, 1, 6, 2, 7 };
 
-                QuickSort(arr, 1, arr.Length - 1);
+                QuickSort(arr, 0, arr.Length - 1);
 
                 #endregion
             }
