@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj": {}
+    "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj": {
+    "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj",
+        "projectUniqueName": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj",
         "projectName": "Class_8th",
-        "projectPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj",
-        "packagesPath": "C:\\Users\\IDBLAB\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_8th\\obj\\",
+        "projectPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_8th\\Class_8th.csproj",
+        "packagesPath": "C:\\Users\\노준영\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_8th\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IDBLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\노준영\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
