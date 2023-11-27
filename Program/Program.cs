@@ -4,26 +4,53 @@ namespace Program
 {
     internal class Program
     {
-        public static void Merge(int []arr, int start, int end)
+        public static void Merge(int []arr, int[] newArr, int start, int end)
         {
-            int mid = (start + end) / 2;
-            
-            if(start == end) 
+            if (start < end)
             {
-                return;
+                int mid = (start + end) / 2;
+
+                Merge(arr, newArr, start, mid);
+
+                Merge(arr, newArr, mid + 1, end);
+
+                MergeSort(arr, newArr, start, mid, end);
             }
-
-            Merge(arr, start, mid);
-
-            Merge(arr, mid + 1, end);
-
         }
 
-        public static void Conquer(int[]arr, int start, int end)
+        public static void MergeSort(int[]arr, int[]newArr, int start, int mid, int end)
         {
-            int rightSize = end - (start - end) / 2;
-            int[] newArr = new int[rightSize];
+            //int rightSize = end - (start - end) / 2;
+            
+            int k = start;
+            int j = mid + 1;
+            int index = start;
 
+            for(int i = start; i<= end; i++)
+            {
+                newArr[i] = arr[i];
+            }
+
+            while(k <= mid && j <= end)
+            {
+                if (newArr[k] < newArr[j])
+                {
+                    arr[index++] = newArr[k++];
+                }
+                else
+                {
+                    arr[index++] = newArr[j++];
+                }
+            }
+
+            while (k <= mid)
+            {
+                arr[index++] = newArr[k++];
+            }
+            while (j <= end)
+            {
+                arr[index++] = newArr[j++];
+            }
 
         }
 
@@ -40,8 +67,14 @@ namespace Program
             // 결합 : 정렬된 부분 배열들을 하나의 배열에 병합합니다.
 
             int[] arr = new int[9] { 5, 3, 8, 4, 9, 1, 6, 2, 7 };
+            int[] newArr = new int[arr.Length];
 
-            Merge(arr, 0, arr.Length - 1);
+            Merge(arr, newArr, 0, arr.Length - 1);
+
+            foreach(int element in arr)
+            {
+                Console.WriteLine(element);
+            }
 
             #endregion
         }
