@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Class_15th
 {
     internal class AdjacencyList
     {
@@ -70,6 +70,27 @@ namespace Program
                         queue.Enqueue((adjacencyList[index][j]));
                     }
                 }          
+            }
+        }
+
+        public void DFS(int rootNode)
+        {
+            bool[] visited = new bool[size];
+
+            int index = rootNode;
+
+            visited[rootNode] = true;
+
+            Console.Write(rootNode + " ");
+
+            // foreach(int i in adjacencyList[index]) 
+            for(int j = 0; j < adjacencyList[index].Count; j++)
+            {
+                if (visited[adjacencyList[index][j]] == false)
+                {
+                    visited[adjacencyList[index][j]] |= true;
+                    DFS(adjacencyList[index][j]);
+                }
             }
         }
     }

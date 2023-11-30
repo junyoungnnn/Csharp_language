@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\IDBLAB\\.nuget\\packages\\": {}
+    "C:\\Users\\노준영\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_14th\\Class_14th.csproj",
+      "projectUniqueName": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_14th\\Class_14th.csproj",
       "projectName": "Class_14th",
-      "projectPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_14th\\Class_14th.csproj",
-      "packagesPath": "C:\\Users\\IDBLAB\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IDBLAB\\Desktop\\cSharp_language\\Class_14th\\obj\\",
+      "projectPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_14th\\Class_14th.csproj",
+      "packagesPath": "C:\\Users\\노준영\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\노준영\\Desktop\\cSharp_language\\Class_14th\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IDBLAB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\노준영\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
